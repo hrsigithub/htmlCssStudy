@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テーブル学習</title>
+
+    <!-- reset.css destyle -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" /> -->
+
+    <!-- reset.css ress -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" /> -->
+
+
+
+    <!-- 基本のスタイリング -->
+    <style>
+        h2 {
+            color: blueviolet;
+        }
+
+        /* 表全体や列幅が自動調整（デフォルト） */
+
+        .table th,
+        .table td {
+            /* セルの境界線 */
+            border: 1px solid #000;
+
+            /* セルの余白 １文字分上下左右 */
+            padding: 1em;
+        }
+
+        table {
+            margin-bottom: 20px;
+        }
+
+        .table {
+            /* テーブルなら必須 */
+            /* 隣り合う境界線を１本に結合 */
+            border-collapse: collapse;
+        }
+
+        .table thead {
+            /* 見出し行に背景色 */
+            background-color: #2e7c9f;
+            color: #fff;
+        }
+
+        /* 奇数行の背景色 */
+        .table tbody tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        /* 偶数行の背景色 */
+        .table tbody tr:nth-child(even) {
+            background-color: #dbf6ff;
+        }
+
+        /* 最終行の色の設定 */
+        .table tbody tr:last-child {
+            background-color: yellow;
+        }
+
+        /* ホバーした時の行をハイライト */
+        .table tbody tr:hover {
+            background-color: #ffe593;
+            font-weight: bold;
+        }
+
+        /* 表やセルの幅を設定 */
+        .table02 {
+            width: 100%;
+
+            /* 表の幅が自動調整されるのを解除 */
+            table-layout: fixed;
+        }
+
+        /* .table02 thead th:nth-child(1) { */
+        .table02 thead th:first-child {
+            /* 最初の要素 */
+            width: 30%;
+
+            /* paddingで設定された余白をwidthで指定された大きさの中に含める */
+            box-sizing: border-box;
+        }
+
+        .table-container {
+            /* max-width: 800px; */
+
+            /* テーブルの最大の高さを指定 */
+            max-height: 200px;
+
+            /* スクロールバーを表示する */
+            overflow: auto;
+            /* direction: rtl; スクロールバーを右から左に配置する */
+
+
+            margin: 0;
+            padding: 0;
+        }
+
+        .table-container table {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* レスポンシブ対応 */
+        @media (max-width: 640px) {
+            body {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .title {
+                font-size: 16px;
+            }
+
+            .table {
+                font-size: 12px;
+            }
+
+            .table th,
+            .table td {
+                padding: 0.5em;
+            }
+        }
+    </style>
+</head>
+
+<!-- thead、tfootは一つだけ -->
+
+<body>
+
+    <div class="box">
+        <h2 class="title">何もスタイリングしていない状態</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>表見出し</th>
+                    <th>表見出し</th>
+                    <th>表見出し</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>表データ</td>
+                    <td>表データ</td>
+                    <td>表データ</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="box">
+        <h2 class="title">基本のスタイリング</h2>
+        <table class="table table01">
+            <thead>
+                <tr>
+                    <th>表見出し</th>
+                    <th>表見出し</th>
+                    <th>表見出し</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>表データ</td>
+                    <td>表データ</td>
+                    <td>表データ</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="table-container">
+            <table class="table table01">
+                <thead>
+                    <tr>
+                        <th>表見出し</th>
+                        <th>表見出し</th>
+                        <th>表見出し</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>表データ</td>
+                        <td>表データ</td>
+                        <td>表データ</td>
+                    </tr>
+                    <tr>
+                        <td>表データ</td>
+                        <td>表データ</td>
+                        <td>表データ</td>
+                    </tr>
+                    <tr>
+                        <td>表データ</td>
+                        <td>表データ</td>
+                        <td>表データ</td>
+                    </tr>
+                    <tr>
+                        <td>表データ</td>
+                        <td>表データ</td>
+                        <td>表データ</td>
+                    </tr>
+                    <tr>
+                        <td>表データ</td>
+                        <td>表データ</td>
+                        <td>表データ</td>
+                    </tr>
+                    <tr>
+                        <td>表データ</td>
+                        <td>表データ</td>
+                        <td>表データ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="box">
+        <h2 class="title">表の幅や大きさの調整</h2>
+        <table class="table table02">
+            <thead>
+                <tr>
+                    <th>表見出し</th>
+                    <th>表見出し</th>
+                    <th>表見出し</th>
+                    <th>表見出し</th>
+                    <th>表見出し</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>表データ表データ表データ表データ表データ表データ表データ表データ表データ</td>
+                    <td>表データ</td>
+                    <td>表データ</td>
+                    <td>表データ表データ表データ表データ</td>
+                    <td>表データ</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+</body>
+
+</html>
