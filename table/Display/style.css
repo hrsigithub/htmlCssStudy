@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+}
+
+/* border BOXまでが要素で、背景色がつく */
+
+/* マージンの相殺 */
+/* ブロック要素が並ぶ時、大きい値が採用される */
+/* インライン、インラインブロックでは総裁は起こらない */
+
+
+.content1 {
+    /* ブロック要素は高さ、幅が指定できる */
+    /* ブロック要素は前に改行入る */
+    background-color: aquamarine;
+    width: 135px;
+    height: 50px;
+    /* マージンの相殺 */
+    margin-bottom: 30px;
+
+
+    border: 5px dashed red;
+    padding: 3px;
+}
+
+.content2 {
+    background-color: blueviolet;
+    width: 40%;
+    height: 50px;
+
+    /* マージンの相殺 採用されない*/
+    margin-top: 20px;
+}
+
+.content3 {
+    background-color: red;
+    width: 50%;
+    height: 50px;
+}
+
+.inlinecontent {
+    /* インライン要素は高さ、幅指定不可 */
+    display: inline;
+    background-color: brown;
+    color: #ffff;
+
+    /* 左右のmarginはOK、上下にはmarginはダメ */
+    margin: 50px;
+}
+
+.inlineblock1 {
+    /* インラインブロック要素は高さ、幅が指定できる */
+    /* 横並び */
+    background-color: brown;
+    display: inline-block;
+    width: 250px;
+    height: 20px;
+}
+
+.inlineblock2 {
+    background-color: blueviolet;
+    display: inline-block;
+    width: 220px;
+    height: 15px;
+}
+
+.inlineblock3 {
+    background-color: red;
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+}
+
+.box1 {
+    /* content + padding + border */
+    box-sizing: content-box;
+
+    /* width */
+    /* 300px + ((3px + 5px) * 2) =  300px + 16px = 316px */
+
+    /* hight */
+    /* 100px + ((3px + 5px) * 2) =  100px + 16px = 116px */
+
+    background-color: blueviolet;
+
+    border: 5px solid red;
+    padding: 3px;
+    width: 300px;
+    height: 100px;
+}
+
+.box2 {
+    /* content - padding - border */
+    box-sizing: border-box;
+
+    /* width */
+    /* (3px + 5px) * 2 = 16px */
+    /* 300 - 16px = 284px */
+
+    /* hight */
+    /* 100px - 16px = 84px */
+
+
+    background-color: cyan;
+
+    border: 5px solid red;
+    padding: 3px;
+    width: 300px;
+    height: 100px;
+}
+
+.iPhone1 {
+    margin-top: 20px;
+    background-color: burlywood;
+
+    border: 2px solid red;
+    padding: 3px;
+
+    width: calc(100% - (3 - 3) * 2)
+    
+}
+.iPhone2 {
+/* widthは計算しなくてよい */
+    box-sizing: border-box;
+    margin-top: 20px;
+    background-color: burlywood;
+
+    border: 2px solid red;
+    padding: 3px;
+
+    width: 100%;
+    
+}
