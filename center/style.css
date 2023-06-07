@@ -1,0 +1,224 @@
+.image {
+    width: 250px;
+    height: 150px;
+}
+
+.parent {
+    /* イメージは親要素に指定 */
+    text-align: center;
+}
+
+.target1 {
+    display: inline-block;
+    padding: 9px;
+    background-color: aquamarine;
+    margin: 20px;
+    width: 300px;
+
+}
+
+.target2 {
+    display: inline-block;
+    padding: 9px;
+    background-color: aquamarine;
+    margin: 20px;
+    width: 300px;
+
+    text-align: left;
+}
+
+.clsinput {
+    width: 450px;
+    height: 30px;
+}
+
+.tate {
+    display: table-cell;
+    /* ブロック要素の指定できない */
+    vertical-align: middle;
+
+
+    background-color: aquamarine;
+    width: 450px;
+
+    /* 同じにすると縦方向に真ん中 */
+    height: 130px;
+    /* line-height: 130px; */
+
+}
+
+content p {
+    background-color: #ccc;
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.content p span {
+    font-size: 20px;
+    background-color: #fff;
+}
+
+.top {
+    vertical-align: top;
+}
+
+.text-top {
+    vertical-align: text-top;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+.baseline {
+    vertical-align: baseline;
+}
+
+.text-bottom {
+    vertical-align: text-bottom;
+}
+
+.bottom {
+    vertical-align: bottom;
+}
+
+.block1 {
+    height: 180px;
+    background-color: #eee;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.block2 {
+    background-color: #eee;
+    display: inline-block;
+    /* height: 180px; */
+    vertical-align: middle;
+}
+
+.target3 {
+    background-color: lightblue;
+    width: 500px;
+    margin-bottom: 15px;
+}
+
+.sample {
+    font-size: 50px;
+}
+
+.text {
+    background-color: lightyellow;
+    font-size: 30px;
+}
+
+.top,
+.text-top,
+.middle,
+.baseline,
+.text-bottom,
+.bottom,
+.sub,
+.super {
+    background-color: pink;
+    font-size: 15px;
+}
+
+.top {
+    vertical-align: top;
+}
+
+.text-top {
+    vertical-align: text-top;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+.baseline {
+    vertical-align: baseline;
+}
+
+.text-bottom {
+    vertical-align: text-bottom;
+}
+
+.bottom {
+    vertical-align: bottom;
+}
+
+.sub {
+    vertical-align: sub;
+}
+
+.super {
+    vertical-align: super;
+}
+
+
+
+
+/* 文字全体に下線を引く */
+span {
+    text-decoration: underline;
+}
+
+/* 文字のあるdivタグに上下線を引く */
+.main-contents {
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+/*「侍エンジニア」の文字サイズを指定 */
+.font-samurai {
+    font-size: 80px;
+}
+
+/********** 以下でvertical-alignを設定 **********/
+.vertical-align-top {
+    vertical-align: top;
+    font-size: 25px;
+    background-color: orange
+}
+
+.vertical-align-middle {
+    vertical-align: middle;
+    font-size: 25px;
+    background-color: aqua
+}
+
+.vertical-align-bottom {
+    vertical-align: bottom;
+    font-size: 25px;
+    background-color: orange
+}
+
+.vertical-align-text-top {
+    vertical-align: text-top;
+    font-size: 25px;
+    background-color: aqua
+}
+
+.vertical-align-baseline {
+    vertical-align: baseline;
+    font-size: 25px;
+    background-color: orange
+}
+
+.vertical-align-text-bottom {
+    vertical-align: text-bottom;
+    font-size: 25px;
+    background-color: aqua
+}
+
+.vertical-align-30per {
+    vertical-align: 30%;
+    font-size: 25px;
+    background-color: orange
+}
+
+.vertical-align-20px {
+    vertical-align: 20px;
+    font-size: 25px;
+    background-color: aqua
+}

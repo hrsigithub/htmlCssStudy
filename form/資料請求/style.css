@@ -1,0 +1,54 @@
+.sec {
+    background-color: #EBBA4E;
+    padding: 10px 0 70px
+}
+
+.sec .inner {
+    width: 860px;
+    margin: 0 auto;
+} 
+
+.sec input[type="text"],
+.sec input[type="email"],
+.sec textarea {
+    display: block;
+    width: 80%;
+    height: 50px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 2rem;
+}
+
+.sec input[type="text"]::placeholder,
+.sec input[type="email"]::placeholder,
+.sec textarea::placeholder {
+    color: red;
+    font-size: 1rem;
+
+}
+
+.sec button {
+    /* 親要素じゃなく自身にボタンを中央 */
+    /* margin: 0 auto; */
+    display: block;
+    width: 100%;
+    height: 44px;
+    border: none;
+    background-color: #da6b64;
+    border-radius: 22px;
+    padding: 10px;
+    /* margin-bottom: 20px; */
+    color: white;
+ 
+
+}
+
+.sec textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 40px;
+    font-size: 1rem;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- インライン要素は親のブロック要素に指定する必要がある。 -->
+
+    <p style="text-align: center;">しょこたん</p>
+
+    <h1 style="text-align: center;">
+        <span>AA</span>
+    </h1>
+
+    <div class="parent">
+        <img class="image"
+            src="https://img.sirabee.com/wp-content/uploads/2022/03/sirabee20220322nakagawasyoko4.jpg.webp" alt="">
+    </div>
+
+    <div style="text-align: center;">
+        <div class="target1">全体を真ん中にしたい</div>
+    </div>
+
+    <div style="text-align: center;">
+        <div class="target2">中身のテキストを左寄せにしたい</div>
+    </div>
+
+    <div style="
+        background-color: blueviolet; 
+        color: #fff;
+        width: 20%;
+        margin: 0 auto;">ブロック要素だわ
+    </div>
+
+    <div style="text-align: center; margin: 30px;">
+        <input class="clsinput" type="text" value="テキストボックスの中身">
+    </div>
+
+    <div class="tate">
+        縦に中央 hightを指定する場合はdisplay: table-cell;
+    </div>
+
+
+
+
+
+    <div class="block">
+        <div class="block1">
+            <p>blockの要素にvertical-alignを指定する</p>
+        </div>
+        <div class="block2">
+            <p>blockの要素にvertical-alignを指定する</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <p>一行<span class="top">vertical-align:top</span></p>
+        <p>一行<span class="text-top">vertical-align:text-top</span></p>
+        <p>一行<span class="middle">vertical-align:middle</span></p>
+        <p>一行<span class="baseline">vertical-align:baseline</span></p>
+        <p>一行<span class="text-bottom">vertical-align:text-bottom</span></p>
+        <p>一行<span class="bottom">vertical-align:bottom</span></p>
+    </div>
+
+    <div class="target3">
+        <span class="sample">行</span><span class="text">サンプルテキスト<span class="top">top</span></span>
+    </div>
+    <div class="target3">
+        <span class="sample">行</span><span class="text">サンプルテキスト<span class="text-top">text-top</span></span>
+    </div>
+    <div class="target3">
+        <span class="sample">行</span><span class="text">サンプルテキスト<span class="middle">middle</span></span>
+    </div>
+    <div class="target3">
+        <span class="sample">行</span><span class="text">サンプルテキスト<span class="baseline">baseline</span></span>
+    </div>
+    <div class="target3">
+        <span class="sample">行</span><span class="text">サンプルテキスト<span class="text-bottom">text-bottom</span></span>
+    </div>
+    <div class="target3">
+        <span class="sample">行</span><span class="text">サンプルテキスト<span class="bottom">bottom</span></span>
+    </div>
+    <div class="target3">
+        <span class="sample">行</span><span class="text">サンプルテキスト<span class="sub">sub</span></span>
+    </div>
+    <div class="target3">
+        <span class="sample">行</span><span class="text">サンプルテキスト<span class="super">super</span></span>
+    </div>
+
+
+
+    <h2>サンプルコード</h2>
+    <div class="main-contents">
+        <span class="font-samurai">侍エンジニア</span>
+        <span class="vertical-align-top">top</span>
+        <span class="vertical-align-middle">middle</span>
+        <span class="vertical-align-bottom">bottom</span>
+        <span class="vertical-align-text-top">text-top</span>
+        <span class="vertical-align-baseline">baseline</span>
+        <span class="vertical-align-text-bottom">text-bottom</span>
+        <span class="vertical-align-30per">30%</span>
+        <span class="vertical-align-20px">20px</span>
+    </div>
+</body>
+
+</html>

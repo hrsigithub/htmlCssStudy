@@ -1,0 +1,20 @@
+.contener {
+    width: 800px;
+    /* height: 200px; */
+    padding: 10px;
+    margin: 30px 0;
+    background-color: #ccc;
+}
+
+.c01 {
+    display: flex;
+}
+
+
+.item {
+    width: 50px;
+    height: 50px;
+    padding: 1px;
+    margin: 1px;
+    background-color: aqua;
+}
